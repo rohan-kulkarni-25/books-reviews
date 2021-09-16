@@ -1,3 +1,4 @@
+// IMPORTING MODULES
 const http = require('http')
 const url = require('url');
 const fs = require('fs');
@@ -6,6 +7,9 @@ const fs = require('fs');
 // READING JSON FILE 
 const booksData = fs.readFileSync(`${__dirname}/data/books-reviews.json`, 'utf-8');
 const booksObj = JSON.parse(booksData);
+
+
+//  SERVER CREATED AND ROUTES ADDED 
 
 const server = http.createServer((req, res) => {
   const urlObj = url.parse(req.url, true);
@@ -44,13 +48,9 @@ const server = http.createServer((req, res) => {
     });
     res.end('<div><h1>Page Not Found</h1></div><div><h2>Try using other route</h2></div><h3>The route you are trying to access is not specified</h3>');
   }
-
-
-
-
 })
 
-
+// SERVER SETUP
 server.listen(8000, '127.0.0.1', () => {
   console.log('App Running on PORT 8000.....');
 })
