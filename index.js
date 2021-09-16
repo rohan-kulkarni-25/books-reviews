@@ -2,7 +2,7 @@
 const http = require('http')
 const url = require('url');
 const fs = require('fs');
-
+const dotenv = require('dotenv');
 
 // READING JSON FILE 
 const booksData = fs.readFileSync(`${__dirname}/data/books-reviews.json`, 'utf-8');
@@ -51,6 +51,9 @@ const server = http.createServer((req, res) => {
 })
 
 // SERVER SETUP
-server.listen(8000, '127.0.0.1', () => {
-  console.log('App Running on PORT 8000.....');
+
+const port = process.env.PORT || 8000;
+
+server.listen(port, '127.0.0.1', () => {
+  console.log(`App Running on PORT ${port}.....`);
 })
