@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Book 1",
+    "price": "",
+    "author": "Random Author 1",
+    "reviews": [
+      {
+        "reader1": [
+          {
+            "name": "Random Reader 1",
+            "review": "The book is very nice."
+          },
+          {
+            "name": "Random Reader 2",
+            "review": "The book author has explained in very simple language"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Book 2",
+    "price": "",
+    "author": "Random Author 2",
+    "reviews": [
+      {
+        "reader1": [
+          {
+            "name": "Random Reader 1",
+            "review": "The book is very nice."
+          },
+          {
+            "name": "Random Reader 2",
+            "review": "The book author has explained in very simple language"
+          },
+          {
+            "name": "Random Reader 3",
+            "review": "The book is worth buying"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Book 3",
+    "price": "",
+    "author": "Random Author 3",
+    "reviews": [
+      {
+        "reader1": [
+          {
+            "name": "Random Reader 1",
+            "review": "The book is very nice."
+          },
+          {
+            "name": "Random Reader 2",
+            "review": "The book is worth buying"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Book 4",
+    "price": "",
+    "author": "Random Author 4",
+    "reviews": [
+      {
+        "reader1": [
+          {
+            "name": "Random Reader 1",
+            "review": "The book author has explained in very simple language"
+          },
+          {
+            "name": "Random Reader 2",
+            "review": "The book is worth buying"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Book 5",
+    "price": "",
+    "author": "Random Author 1",
+    "reviews": [
+      {
+        "reader1": [
+          {
+            "name": "Random Reader 1",
+            "review": "The book author has explained in very simple language"
+          }
+        ]
+      }
+    ]
+  }
+]
