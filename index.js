@@ -16,7 +16,11 @@ const server = http.createServer((req, res) => {
 
   const pathName = urlObj.pathname;
 
-  if (pathName === '/api/books' || pathName === '/api') {
+  if (pathName === '/') {
+    res.end('Please go to  /api');
+  }
+
+  else if (pathName === '/api/books' || pathName === '/api') {
     res.writeHead(200, {
       'Content-type': 'Application/json'
     });
