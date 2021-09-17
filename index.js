@@ -3,6 +3,7 @@ const http = require('http')
 const url = require('url');
 const fs = require('fs');
 const dotenv = require('dotenv');
+const { hostname } = require('os');
 
 // READING JSON FILE 
 const booksData = fs.readFileSync(`${__dirname}/data/books-reviews.json`, 'utf-8');
@@ -19,7 +20,6 @@ const server = http.createServer((req, res) => {
   if (pathName === '/') {
     res.end('Please go to  /api');
   }
-
   else if (pathName === '/api/books' || pathName === '/api') {
     res.writeHead(200, {
       'Content-type': 'Application/json'
@@ -58,6 +58,6 @@ const server = http.createServer((req, res) => {
 
 const port = process.env.PORT || 8000;
 
-server.listen(port, '127.0.0.1', () => {
+server.listen(port, hostname, () => {
   console.log(`App Running on PORT ${port}.....`);
 })
