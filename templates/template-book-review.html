@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./media/outline_book_black_48dp.png" type="image/x-icon">
+  <title>Book Shelf</title>
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    header {
+      background-color: orangered;
+      font-size: 5rem;
+      height: 8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 800;
+    }
+
+    footer {
+      background-color: black;
+      font-size: 2.5rem;
+      height: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 800;
+    }
+
+    .book {
+      margin: 5rem;
+      padding: 2rem;
+      min-width: 35rem;
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      border-radius: 25px;
+      gap: 2rem;
+      box-shadow: 1px 1px 5px gray;
+      position: relative;
+    }
+
+
+
+    .bookImg {
+      font-size: 15rem;
+    }
+
+
+    .bookName {
+      font-size: 4rem;
+      text-align: center;
+    }
+
+    .price {
+      font-size: 3rem;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .author {
+      font-size: 2rem;
+    }
+
+    .book button {
+      background-color: gold;
+
+      font-weight: 600;
+      color: black;
+      font-size: 3rem;
+      border: 0;
+      padding: 1rem;
+      align-self: stretch;
+      border-radius: 0 0 25px 25px;
+      cursor: pointer;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    .bookReview {
+      margin: 1rem;
+      padding: 2rem;
+      /* width: fit-content; */
+      width: 50rem;
+      width: 50rem;
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      border-radius: 25px;
+      gap: 2rem;
+      box-shadow: 1px 1px 5px gray;
+    }
+
+    .bookReview .name {
+      font-size: 2rem;
+      align-self: flex-start;
+      font-weight: 600;
+    }
+
+    .bookReview .comment {
+      font-size: 2rem;
+      align-self: flex-start;
+    }
+
+    .goback {
+      position: absolute;
+      top: 9rem;
+      left: 1rem;
+      padding: 2rem;
+      border: 1px solid black;
+      background-color: yellow;
+      font-size: 2rem;
+      text-decoration: none;
+      border-radius: 25px;
+      color: black;
+      font-weight: 600;
+
+    }
+
+    .goback:hover {
+      transform: scale(1.1);
+    }
+
+    @media screen and (max-width: 37.5rem) {
+      html {
+        font-size: 50%;
+      }
+    }
+
+    @media screen and (max-width: 31.5rem) {
+      html {
+        font-size: 40%;
+      }
+    }
+
+    @media screen and (max-width: 22rem) {
+      html {
+        font-size: 30%;
+      }
+    }
+
+    @media screen and (max-width: 19rem) {
+      html {
+        font-size: 25%;
+      }
+    }
+
+    @media screen and (max-width: 15.6rem) {
+      html {
+        font-size: 20%;
+      }
+    }
+
+    @media screen and (max-width: 11.2rem) {
+      html {
+        font-size: 15%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>BOOKS REVIEWS</header>
+  <section>
+    <a class="goback" href="/books">GO BACK</a>
+    {%BOOK_CARD%}
+    {%ALL_REVIEWS%}
+  </section>
+  <footer>MADE WITH &hearts; BY ROHAN KULKARNI</footer>
+</body>
+
+</html>

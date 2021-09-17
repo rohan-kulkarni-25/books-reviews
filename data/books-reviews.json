@@ -6,7 +6,7 @@
     "author": "Random Author 1",
     "reviews": [
       {
-        "reader1": [
+        "reader": [
           {
             "name": "Random Reader 1",
             "review": "The book is very nice."
@@ -26,7 +26,7 @@
     "author": "Random Author 2",
     "reviews": [
       {
-        "reader1": [
+        "reader": [
           {
             "name": "Random Reader 1",
             "review": "The book is very nice."
@@ -50,7 +50,7 @@
     "author": "Random Author 3",
     "reviews": [
       {
-        "reader1": [
+        "reader": [
           {
             "name": "Random Reader 1",
             "review": "The book is very nice."
@@ -70,7 +70,7 @@
     "author": "Random Author 4",
     "reviews": [
       {
-        "reader1": [
+        "reader": [
           {
             "name": "Random Reader 1",
             "review": "The book author has explained in very simple language"
@@ -90,7 +90,7 @@
     "author": "Random Author 1",
     "reviews": [
       {
-        "reader1": [
+        "reader": [
           {
             "name": "Random Reader 1",
             "review": "The book author has explained in very simple language"
